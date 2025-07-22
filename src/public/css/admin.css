@@ -1,0 +1,11 @@
+.admin-heder
+{
+    background-color: #333;
+    color: #fff;
+}
+
+.admin-sidebar {
+    width: 200px;
+    float: left;
+    background-color: #eee;
+}

@@ -1,0 +1,161 @@
+.body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F6F4;
+    /* 画像に合わせたベージュ系の背景色 */
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に要素を並べる */
+    min-height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* 左右に要素を配置 */
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    /* paddingを含めて幅を計算 */
+}
+
+.header__logo {
+    font-family: serif;
+    /* 例としてセリフ体。画像に合わせて調整 */
+    font-size: 24px;
+    color: #333;
+    /* ロゴの色 */
+    text-decoration: none;
+    /* リンクの下線なし */
+}
+
+.header__register-button {
+    /* loginページにはregisterボタンがあるので名前を変更 */
+    padding: 8px 20px;
+    background-color: #fff;
+    /* 白い背景 */
+    border: 1px solid #ddd;
+    /* 枠線 */
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header__register-button:hover {
+    background-color: #eee;
+}
+
+/* メインコンテンツ（フォームコンテナを中央に配置） */
+.main-content {
+    flex-grow: 1;
+    /* ヘッダーとフッター以外の残りのスペースを全て使う */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 垂直方向中央寄せ */
+    align-items: center;
+    /* 水平方向中央寄せ */
+    padding-bottom: 50px;
+    /* フッターがある場合のスペース */
+}
+
+/* ログインフォームのカード */
+.login-card {
+    /* クラス名をlogin-cardに変更 */
+    background-color: #fff;
+    /* 白い背景 */
+    padding: 40px 50px;
+    /* 内側の余白 */
+    border-radius: 8px;
+    /* 角丸 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* 影を薄く */
+    width: 400px;
+    /* 幅を固定 */
+    max-width: 90%;
+    /* 小さい画面での対応 */
+    text-align: center;
+    /* フォーム内の要素を中央寄せ */
+}
+
+.login-card__title {
+    /* クラス名をlogin-card__titleに変更 */
+    font-family: serif;
+    /* 画像に合わせたセリフ体 */
+    font-size: 28px;
+    color: #555;
+    /* タイトル色 */
+    margin-bottom: 30px;
+}
+
+/* フォームグループ */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    /* ラベルと入力欄を左寄せ */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    /* 親要素の幅いっぱい */
+    padding: 12px 15px;
+    /* 内側の余白 */
+    border: 1px solid #eee;
+    /* 枠線を薄く */
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #F8F8F8;
+    /* 入力フィールドの背景色を少しグレーに */
+    box-sizing: border-box;
+    /* paddingとborderを含めて幅を計算 */
+}
+
+.form-group input::placeholder {
+    /* プレースホルダーのスタイル */
+    color: #aaa;
+}
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    text-align: left;
+    /* エラーメッセージも左寄せ */
+}
+
+/* ログインボタン */
+.login-button {
+    /* クラス名をlogin-buttonに変更 */
+    width: 150px;
+    /* ボタンの幅を固定 */
+    padding: 12px 25px;
+    background-color: #8B4513;
+    /* 例: 茶色系の色。画像に合わせて調整 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    /* 上のフォーム項目との間隔 */
+}
+
+.login-button:hover {
+    background-color: #A0522D;
+    /* ホバー時の色 */
+}

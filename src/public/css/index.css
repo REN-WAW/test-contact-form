@@ -1,0 +1,114 @@
+.header {
+    background: #fff;
+    display: block;
+    text-align: center;
+    border-bottom: none;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    border-bottom: solid #efefef;
+}
+
+.header__logo {
+    margin : 0 auto;
+    font-weight: bold;
+    font-size: 40px;
+    color :#9b9284;
+    font-family: serif;
+    border-bottom: none;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #9b9284;
+    font-family: serif;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.form__group-title {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form__label--item {
+    padding: 4px 6px;
+    color: #9b9284
+}
+
+.form__label--required {
+    padding: 4px 6px;
+    color: #ff0000;
+}
+
+.form__group-content {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid#f5f5f5;
+    background-color: #f5f5f5;
+    width: 600px;
+}
+
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    height: 180px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    appearance: none;
+    display: flex;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #ee1c1c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__input--radio {
+    display: flex;
+}
+
+.form__input--tel {
+    display: flex;
+}
